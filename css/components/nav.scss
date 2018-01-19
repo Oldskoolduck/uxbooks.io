@@ -1,6 +1,19 @@
 .nav {
-  padding: 20px;
+  height: 70px;
+  text-align: left;
+  background: #fff;
+  @include clearfix;
+  &-logo {
+    height: 44px;
+    float: left;
+    margin-top: 14px;
+  }
   &-item {
     display: inline-block;
+    padding-left: 16px;
+  }
+  ul {
+    float: right;
+    margin-top: 20px;
   }
 }

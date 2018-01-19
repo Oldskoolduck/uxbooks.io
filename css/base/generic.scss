@@ -55,6 +55,11 @@ button {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: $color-primary;
+}
+
 img {
   height: auto;
   max-width: 100%;

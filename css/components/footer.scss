@@ -1,0 +1,13 @@
+.footer {
+  text-align: right;
+  background: #fff;
+  @include clearfix;
+  &-about {
+    padding: 30px 0;
+    float: left;
+  }
+  &-button {
+    float: right;
+    margin: 30px 0;
+  }
+}
