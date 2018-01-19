@@ -49,9 +49,10 @@
 .featured {
   background-color: rgba($color-white, 0.7);
   &-image {
-    float: right;
-    height: 100%;
-    margin-right: 30px;
+    @include respond-to('tablet') {
+      float: right;
+      margin-right: 30px;
+    }
   }
   &-title {
     font-weight: $weight-bold;
@@ -62,7 +63,10 @@
   }
   &-description {
     text-align: left;
-    padding-right: 190px;
+    padding-right: 0px;
+    @include respond-to('tablet') {
+      padding-right: 190px;
+    }
   }
   &-button {
     margin: 20px 0;
@@ -73,5 +77,15 @@
   &-button {
     display: inline-block;
     margin: 0px 10px;
+  }
+}
+
+.recommend {
+  background: $color-brown;
+  color: $color-accent;
+  &-email {
+    font-weight: $weight-bold;
+    text-decoration: underline;
+    text-decoration-color: $color-primary;
   }
 }

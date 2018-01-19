@@ -39,7 +39,6 @@ textarea {
   font-family: $font-family-body;
   font-size: $body-text;
   line-height: $body-lineheight;
-  color: $color-dark;
 }
 
 h1,
@@ -53,6 +52,10 @@ a,
 button {
   cursor: pointer;
   text-decoration: none;
+}
+
+a {
+  color: inherit;
 }
 
 a:hover {

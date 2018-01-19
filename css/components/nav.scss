@@ -17,3 +17,24 @@
     margin-top: 20px;
   }
 }
+
+.nav-sticky {
+  position: fixed;
+  top: -5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 300px;
+  height: 52px;
+  background-color: rgba($color-white, 0.9);
+  z-index: 200;
+  text-align: center;
+  border: 0.5px solid rgba($color-grey, 0.5);
+  border-radius: $rounded;
+}
+
+.nav-sticky-item {
+  display: inline-block;
+  padding: 12px 8px 0 8px;
+  font-weight: $weight-bold;
+}
