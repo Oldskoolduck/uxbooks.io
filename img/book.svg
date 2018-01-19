@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="180px" viewBox="0 0 165 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>book</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#F1F1F1" offset="0%"></stop>
+            <stop stop-color="#E1E1E1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="book">
+            <rect id="Rectangle-Copy-2" fill="#AF5B4D" x="12" y="159" width="148" height="21"></rect>
+            <path d="M8,0 L12,0 L12,180 L8,180 C3.581722,180 5.41083001e-16,176.418278 0,172 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="binding" fill="#F0664E"></path>
+            <path d="M11,161 L155,161 C153.709677,162.666667 153.064516,165.166667 153.064516,168.5 C153.064516,171.833333 153.709677,174.333333 155,176 L11,176 C7.6862915,176 5,173.313708 5,170 L5,167 C5,163.686292 7.6862915,161 11,161 Z" id="pages" fill="url(#linearGradient-1)"></path>
+            <rect id="cover" fill="#FFC5BB" x="12" y="0" width="153" height="161"></rect>
+            <g id="sub" transform="translate(32.000000, 128.000000)" fill="#F4F4F4" opacity="0.500283062">
+                <rect id="Rectangle-2-Copy-2" x="0" y="0" width="113" height="3"></rect>
+                <rect id="Rectangle-2-Copy-4" x="22" y="18" width="70" height="3"></rect>
+                <rect id="Rectangle-2-Copy-3" x="37" y="9" width="40" height="3"></rect>
+            </g>
+            <g id="headline" transform="translate(32.000000, 14.000000)" fill="#F4F4F4">
+                <rect id="Rectangle-2" x="0" y="0" width="113" height="7"></rect>
+                <rect id="Rectangle-2-Copy" x="29" y="13" width="55" height="7"></rect>
+            </g>
+            <text id="UX" font-family="Helvetica-Bold, Helvetica" font-size="68" font-weight="bold" letter-spacing="1.91241181" fill="#454452">
+                <tspan x="39" y="106">UX</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

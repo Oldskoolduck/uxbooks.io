@@ -1,0 +1,46 @@
+
+// Colors
+
+$color-primary: #f0664e;
+$color-accent: #f5f3ec;
+$color-white: #fff;
+$color-dark: #241f21;
+
+
+// Typography
+
+$font-family-heading: 'Playfair Display', serif;
+
+$font-family-body: 'Lato', sans-serif;
+
+$body-text: 1.25rem;
+$body-lineheight: 1.625rem;
+$body-label: 0.875rem;
+
+$heading-1: 3rem;
+$heading-2: 2.4rem;
+$heading-3: 1.5rem;
+
+$weight-normal: 300;
+$weight-bold: 700;
+
+// Layout
+
+$container-size: 1140px;
+
+
+// Object
+
+$rounded: 5px;
+$rounded-button: 50px;
+$box-shadow: 0px 3px 5px 1px rgba($color-dark, 0.02);
+$box-shadow-hover: 0px 5px 28px 9px rgba($color-dark, 0.04);
+
+
+// Responsiveness
+
+$breakpoints: (
+  'mobile': 414px,
+  'tablet': 768px,
+  'desktop': 1100px,
+);

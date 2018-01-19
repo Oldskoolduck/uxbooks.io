@@ -1,0 +1,38 @@
+.container {
+  max-width: $container-size;
+  margin: 0 auto;
+}
+
+// Flex Columns
+
+.col-layout {
+  flex-wrap: wrap;
+  @include respond-to('mobile') {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.col {
+  margin-bottom: 10px;
+  @include respond-to('tablet') {
+    margin-bottom: 0px;
+  }
+}
+
+.col-two {
+  @include respond-to('mobile') {
+    flex-basis: 49%;
+  }
+}
+
+.col-three {
+  flex-basis: 30%;
+}
+
+.col-four {
+  flex-basis: 48%;
+  @include respond-to('tablet') {
+    flex-basis: 23%;
+  }
+}

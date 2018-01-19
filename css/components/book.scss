@@ -1,0 +1,40 @@
+.book {
+  border-radius: $rounded;
+  background: url('../img/donnorman.jpg') no-repeat;
+  background-size: cover;
+  box-shadow: $box-shadow;
+  min-height: 400px;
+  position: relative;
+  @include transition;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+  &:hover .book-info {
+    padding-bottom: 40px;
+  }
+  &:hover .book-title {
+    text-decoration: underline;
+    text-decoration-color: $color-primary;
+  }
+  &-info {
+    @include transition;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba($color-white, 0.95);
+    border-bottom-left-radius: $rounded;
+    border-bottom-right-radius: $rounded;
+  }
+  &-title {
+    @include transition;
+    font-family: $font-family-heading;
+    font-weight: $weight-bold;
+    padding-bottom: 8px;
+  }
+  &-author {
+    font-size: $body-label;
+    color: #aaa;
+    text-transform: uppercase;
+  }
+}
