@@ -1,7 +1,7 @@
 .nav {
   height: 70px;
   text-align: left;
-  background: #fff;
+  background-color: rgba($color-white, 0.7);
   @include clearfix;
   &-logo {
     height: 44px;
