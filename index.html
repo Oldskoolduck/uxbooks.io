@@ -10,7 +10,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Playfair+Display:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Playfair+Display:700|Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -32,13 +32,20 @@
   -->
   <!-- Sticky Nav -->
   <div class="nav-sticky">
-    <p class="nav-sticky-item">Categories</p>
+    <label class="nav-sticky-item" for="menu-toggle">Categories</label>
+    <input type="checkbox" id="menu-toggle"/>
+    <ul id="menu">
+      <li><a href="https://google.com" target="_blank">Category 1</a></li>
+      <li><a href="#">Category 1</a></li>
+      <li><a href="#">Category 1</a></li>
+    </ul>
     <p class="nav-sticky-item">Share</p>
     <p class="nav-sticky-item">Submit</p>
+
   </div>
 
   <!-- Hero -->
-  <header class="hero">
+  <header class="hero" id="top">
     <div class="container">
       <img class="hero-image" src="img/book.svg" alt="ux book">
       <h2 class="hero-title">Read more. Get smarter.</h2>
@@ -114,7 +121,7 @@
           </a>
         </div>
       </div>
-      <button class="button-primary section-seeall">See All</button>
+      <button class="button-primary section-seeall">See All<i class="material-icons">keyboard_arrow_right</i></button>
     </div>
   </div>
 
@@ -190,10 +197,12 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="section footer">
     <div class="container">
       <h3 class="footer-about">ABOUT THIS PROJECT</h3>
-      <button class="button-primary footer-button">Back to Top</button>
+      <a href="#top">
+        <button class="button-primary footer-button">Back to Top</button>
+      </a>
     </div>
   </footer>
 

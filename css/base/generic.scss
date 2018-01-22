@@ -35,7 +35,8 @@ p,
 input,
 select,
 ul,
-textarea {
+textarea,
+label {
   font-family: $font-family-body;
   font-size: $body-text;
   line-height: $body-lineheight;
@@ -49,7 +50,8 @@ h4 {
 }
 
 a,
-button {
+button,
+label {
   cursor: pointer;
   text-decoration: none;
 }

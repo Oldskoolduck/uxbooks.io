@@ -2,14 +2,27 @@
   border: 2px solid $color-primary;
   background-color: transparent;
   border-radius: $rounded-button;
-  padding: 12px 25px;
+  padding: 6px 18px;
   color: $color-primary;
   text-transform: uppercase;
   font-size: $body-label;
+  line-height: 2rem;
   font-weight: $weight-bold;
+  vertical-align: baseline;
+  position: relative;
   @include transition;
-  &:hover {
+  i {
+
+    float: right;
+    position: relative;
+    top: 4px;
+    right: -4px;
     @include transition;
+  }
+  &:hover i {
+    margin-left: 5px;
+  }
+  &:hover {
     color: $color-white;
     background-color: $color-primary;
   }
