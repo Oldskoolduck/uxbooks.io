@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>UX Books</title>
+  <title>UX Books | UX Fundamentals</title>
   <meta name="description" content="UX Books">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Playfair+Display:700|Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -32,8 +32,8 @@
   -->
   <!-- Sticky Nav -->
   <div class="nav-sticky">
-    <a href="/">
-      <img class="nav-sticky-logo" src="img/book.svg" alt="ux books logo">
+    <a href="../">
+      <img class="nav-sticky-logo" src="../img/book.svg" alt="ux books logo">
     </a>
     <label class="nav-sticky-item" for="menu-toggle">Categories</label>
     <input type="checkbox" id="menu-toggle"/>
@@ -49,85 +49,28 @@
   </div>
 
   <!-- Hero -->
-  <header class="hero" id="top">
+  <header class="hero-category" id="top">
     <div class="container">
-      <img class="hero-image" src="img/book.svg" alt="ux books logo">
-      <h2 class="hero-title">Read more. Get smarter.</h2>
+      <h2 class="hero-title">UX Fundamentals</h2>
       <p>UX Books features hand-picked collections of the most important books for UX Designers of any skill level.</p>
     </div>
   </header>
 
-  <!-- Featured -->
-  <div class="section featured">
-    <div class="container">
-      <h3 class="section-title">Featured Book of the Month</h3>
-      <div class="col-layout">
-        <div class="col col-two">
-          <img class="featured-image" src="img/donnorman.jpg" alt="design of everyday things by don norman">
-        </div>
-        <div class="col col-two featured-description">
-          <p class="featured-title">The Design of Everyday Things</p>
-          <p class="featured-author">By Don Norman</p>
-          <p>Synopsis lorem ipsum dolor sit amet avet consectetuer lorem ipsum dolor sit amet avet consectetuer lorem ipsum</p>
-          <a href="#">
-            <button class="button-primary featured-button">Buy on Amazon</button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Category 1 -->
   <div class="section">
     <div class="container">
-      <a href="#">
-        <h3 class="section-title">Category 1</h3>
-      </a>
       <div class="col-layout">
-        <div class="col col-four">
-          <a href="#">
-            <div class="book">
-              <div class="book-info">
-                <p class="book-title">The Design of Everyday Things</p>
-                <p class="book-author">Don Norman</p>
-              </div>
-            </div>
-          </a>
+        <div class="col col-two">
         </div>
-        <div class="col col-four">
-          <a href="#">
-            <div class="book">
-              <div class="book-info">
-                <p class="book-title">The Design of Everyday Things</p>
-                <p class="book-author">Don Norman</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-four">
-          <a href="#">
-            <div class="book">
-              <div class="book-info">
-                <p class="book-title">The Design of Everyday Things</p>
-                <p class="book-author">Don Norman</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-four">
-          <a href="#">
-            <div class="book">
-              <div class="book-info">
-                <p class="book-title">The Design of Everyday Things</p>
-                <p class="book-author">Don Norman</p>
-              </div>
-            </div>
-          </a>
+        <div class="col col-two">
+          <div class="book-info-category">
+            <p class="book-title">The Design of Everyday Things</p>
+            <p class="book-author">Don Norman</p>
+            <button class="button-primary">Buy on Amazon</button>
+          </div>
         </div>
       </div>
-      <a href="ux-fundamentals/">
-      <button class="button-primary section-seeall">See All<i class="material-icons">keyboard_arrow_right</i></button>
-      </a>
+      <hr class="book-separator"/>
     </div>
   </div>
 

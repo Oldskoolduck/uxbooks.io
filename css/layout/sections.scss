@@ -35,6 +35,10 @@
       -webkit-animation: spin 1s ease-in-out;
     }
   }
+  &-category {
+    padding: 80px 20px;
+    text-align: center;
+  }
 }
 
 @-webkit-keyframes spin {

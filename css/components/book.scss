@@ -30,6 +30,9 @@
     border-bottom-left-radius: $rounded;
     border-bottom-right-radius: $rounded;
   }
+  &-info-category {
+    text-align: left;
+  }
   &-title {
     @include transition;
     font-family: $font-family-heading;
@@ -40,5 +43,11 @@
     font-size: $body-label;
     color: $color-grey;
     text-transform: uppercase;
+  }
+  &-separator {
+    background-color: rgba($color-grey, 0.3);
+    border: none;
+    height: 1px;
+    margin: 50px 0;
   }
 }
