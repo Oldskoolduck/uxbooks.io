@@ -6,6 +6,10 @@
   min-height: 400px;
   position: relative;
   @include transition;
+  margin-bottom: 24px;
+  @include respond-to('desktop') {
+    margin-bottom: 0;
+  }
   &:hover {
     box-shadow: $box-shadow-hover;
   }
