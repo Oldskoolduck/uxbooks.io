@@ -33,6 +33,18 @@
   &-info-category {
     text-align: left;
   }
+  &-cover-category {
+    float: right;
+    margin-right: 40px;
+    width: 170px;
+  }
+  &-description {
+    margin-bottom: 12px;
+  }
+  &-tray-link {
+    display: block;
+    margin-top: 20px;
+  }
   &-title {
     @include transition;
     font-family: $font-family-heading;
@@ -47,7 +59,7 @@
   &-separator {
     background-color: rgba($color-grey, 0.3);
     border: none;
-    height: 1px;
+    min-height: 1px;
     margin: 50px 0;
   }
 }

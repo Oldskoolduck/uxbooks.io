@@ -1,9 +1,7 @@
-.button-primary {
-  border: 2px solid $color-primary;
-  background-color: transparent;
+.btn {
+  border: none;
   border-radius: $rounded-button;
   padding: 6px 18px;
-  color: $color-primary;
   text-transform: uppercase;
   font-size: $body-label;
   line-height: 2rem;
@@ -12,7 +10,6 @@
   position: relative;
   @include transition;
   i {
-
     float: right;
     position: relative;
     top: 4px;
@@ -22,6 +19,20 @@
   &:hover i {
     margin-left: 5px;
   }
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  color: $color-white;
+  &:hover {
+    background-color: $color-dark;
+  }
+}
+
+.btn-secondary {
+  border: 2px solid $color-primary;
+  background-color: transparent;
+  color: $color-primary;
   &:hover {
     color: $color-white;
     background-color: $color-primary;
