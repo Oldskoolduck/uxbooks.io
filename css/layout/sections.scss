@@ -6,6 +6,7 @@
     margin-bottom: 50px;
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
   }
   &-seeall {
     margin-top: 50px;
@@ -22,22 +23,31 @@
     padding: 200px 20px;
   }
   &-title {
-    font-size: $heading-1;
+    font-size: $heading-2;
+    line-height: 2.8rem;
+    letter-spacing: 4px;
     font-weight: $weight-bold;
-    padding: 25px 0;
+    padding: 25px 0 15px 0;
     text-transform: uppercase;
+    @include respond-to('tablet') {
+      font-size: $heading-1;
+    }
+  }
+  &-subtitle {
+    padding-bottom: 35px;
+    @include respond-to('tablet') {
+      padding: 0 100px 35px 100px;
+    }
   }
   &-image {
     box-shadow: $box-shadow-hover;
     transition: 0.70s;
-    height: 100px;
+    height: 70px;
     &:hover {
       -webkit-animation: spin 1s ease-in-out;
     }
   }
   &-category {
-    padding: 120px 20px;
-    text-align: center;
     background-color: rgba($color-white, 0.7);
   }
 }
@@ -91,9 +101,4 @@
 .recommend {
   background: $color-brown;
   color: $color-accent;
-  &-email {
-    font-weight: $weight-bold;
-    text-decoration: underline;
-    text-decoration-color: $color-primary;
-  }
 }

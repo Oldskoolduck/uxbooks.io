@@ -48,6 +48,10 @@
   display: inline-block;
   margin: 12px 12px 0 0;
   font-weight: $weight-bold;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $color-primary;
+  }
 }
 
 #menu-toggle {
@@ -58,9 +62,12 @@
   display: none;
   position: absolute;
   top: 0px;
+  left: -1px;
   width: 320px;
   text-align: left;
   border: 0.5px solid rgba($color-grey, 0.5);
+  border-bottom-left-radius: $rounded;
+  border-bottom-right-radius: $rounded;
   li a {
     margin: 20px 10px 20px 25px;
     display: block;
@@ -69,6 +76,6 @@
 
 #menu-toggle:checked + #menu {
   display: block;
-  top: 45px;
+  top: 48px;
   background-color: rgba($color-white, 0.96);
 }

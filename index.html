@@ -35,7 +35,7 @@
     <a href="/">
       <img class="nav-sticky-logo" src="img/book.svg" alt="ux books logo">
     </a>
-    <label class="nav-sticky-item" for="menu-toggle">Categories</label>
+    <label class="nav-sticky-item nav-category-label" for="menu-toggle">Categories</label>
     <input type="checkbox" id="menu-toggle"/>
     <ul id="menu">
       <li><a href="https://google.com" target="_blank">UX Fundamentals</a></li>
@@ -52,8 +52,9 @@
   <header class="hero" id="top">
     <div class="container">
       <img class="hero-image" src="img/book.svg" alt="ux books logo">
-      <h2 class="hero-title">Read more. Get smarter.</h2>
-      <p>UX Books features hand-picked collections of the most important books for UX Designers of any skill level.</p>
+      <h1 class="hero-title">UX BOOKS</h1>
+      <p class="hero-subtitle">Hand-picked collections of the most important books for anyone who makes things.</p>
+      <button class="btn btn-secondary">Start Your Journey</button>
     </div>
   </header>
 
@@ -80,13 +81,14 @@
   <!-- Category 1 -->
   <div class="section">
     <div class="container">
-      <a href="#">
-        <h3 class="section-title">Category 1</h3>
+      <a href="/ux-fundamentals">
+        <h3 class="section-title">Fundamentals of UX</h3>
       </a>
       <div class="col-layout">
         <div class="col col-four">
           <a href="#">
             <div class="book">
+              <img src="book-covers/dont-make-me-think.jpg" alt="don't make me think book">
               <div class="book-info">
                 <p class="book-title">The Design of Everyday Things</p>
                 <p class="book-author">Don Norman</p>
@@ -146,7 +148,8 @@
   <div class="section recommend">
     <div class="container">
       <h3 class="section-title">GOT A BOOK TO RECOMMEND?</h3>
-      <p>Shoot us an email at <a class="recommend-email" href="#">uxbooks@gmail.com</a> <br/>Make sure to include the book title and why you believe every designer should read it!</p>
+      <p>Shoot us an email at <a class="recommend-email" href="#">uxbooks@gmail.com</a></p>
+      <p>Make sure to include the book title and why you believe every designer should read it!</p>
     </div>
   </div>
 
@@ -154,8 +157,9 @@
   <footer class="section footer">
     <div class="container">
       <h3 class="footer-about">ABOUT THIS PROJECT</h3>
+      <p class="footer-description">UX Books is a place to discover the best books and expand the knowledge of anyone who makes things. It was created and curated by <a href="http://www.grahamgrimaldi.com" target="_blank">Graham Grimaldi</a>, a design and tech nerd who enjoys reading.</p>
       <a href="#top">
-        <button class="btn btn-secondary footer-button">Back to Top</button>
+        <button class="btn btn-secondary">Back to Top</button>
       </a>
     </div>
   </footer>

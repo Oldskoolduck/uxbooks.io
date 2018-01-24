@@ -57,7 +57,8 @@ label {
 }
 
 a {
-  color: inherit;
+  color: $color-primary;
+  font-weight: $weight-bold;
 }
 
 a:hover {

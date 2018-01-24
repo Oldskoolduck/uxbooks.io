@@ -1,10 +1,9 @@
 .book {
   border-radius: $rounded;
-  background: url('../img/donnorman.jpg') no-repeat;
-  background-size: cover;
   box-shadow: $box-shadow;
   min-height: 400px;
   position: relative;
+  overflow: hidden;
   @include transition;
   margin-bottom: 24px;
   @include respond-to('desktop') {
@@ -20,23 +19,30 @@
     text-decoration: underline;
     text-decoration-color: $color-primary;
   }
+  &-cover {
+    min-width: 260px;
+    position: relative;
+    left: 0;
+  }
   &-info {
     @include transition;
     padding: 30px;
     position: absolute;
     bottom: 0;
     text-align: center;
-    background-color: rgba($color-white, 0.95);
+    background-color: $color-white;
     border-bottom-left-radius: $rounded;
     border-bottom-right-radius: $rounded;
   }
   &-info-category {
     text-align: left;
+    @include clearfix;
   }
   &-cover-category {
-    float: right;
-    margin-right: 40px;
     width: 170px;
+    img {
+      box-shadow: $box-shadow-hover;
+    }
   }
   &-description {
     margin-bottom: 12px;
@@ -54,7 +60,6 @@
   &-author {
     font-size: $body-label;
     color: $color-grey;
-    text-transform: uppercase;
   }
   &-separator {
     background-color: rgba($color-grey, 0.3);
