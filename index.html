@@ -10,7 +10,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Neuton:800|Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400|Neuton:400,800|Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -18,18 +18,6 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Nav
-  <nav class="nav">
-    <div class="container">
-      <img class="nav-logo" src="img/book.svg" alt="ux book">
-      <ul>
-        <li class="nav-item"><a href="#">Categories</a></li>
-        <li class="nav-item"><a href="#">Submit a Book</a></li>
-        <li class="nav-item"><a href="#">Share</a></li>
-      </ul>
-    </div>
-  </nav>
-  -->
   <!-- Sticky Nav -->
   <div class="nav-sticky">
     <a href="/">
@@ -38,9 +26,9 @@
     <label class="nav-sticky-item nav-category-label" for="menu-toggle">Categories</label>
     <input type="checkbox" id="menu-toggle"/>
     <ul id="menu">
-      <li><a href="https://google.com" target="_blank">UX Fundamentals</a></li>
-      <li><a href="#">Great References</a></li>
-      <li><a href="#">Visual Design</a></li>
+      <li><a href="/ux-fundamentals">UX Essentials</a></li>
+      <li><a href="#">Psychology &amp; Behavior</a></li>
+      <li><a href="#">Practical Skills</a></li>
       <li><a href="#">Web Design &amp; Development</a></li>
     </ul>
     <p class="nav-sticky-item">Share</p>
@@ -51,10 +39,12 @@
   <!-- Hero -->
   <header class="hero" id="top">
     <div class="container">
-      <img class="hero-image" src="img/book.svg" alt="ux books logo">
       <h1 class="hero-title">UX BOOKS</h1>
       <p class="hero-subtitle">Hand-picked collections of the most important books for anyone who makes things.</p>
-      <button class="btn btn-secondary">Start Your Journey</button>
+      <button class="btn btn-light hero-btn">UX Essentials</button>
+      <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
+      <button class="btn btn-light hero-btn">Practical Skills</button>
+      <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
     </div>
   </header>
 
@@ -82,7 +72,8 @@
   <div class="section">
     <div class="container">
       <a href="/ux-fundamentals">
-        <h3 class="section-title">Fundamentals of UX</h3>
+        <h3 class="section-title">Fundamentals of UX <br/>
+        <span>8 Books</span></h3>
       </a>
       <div class="col-layout">
         <div class="col col-four">
@@ -147,8 +138,8 @@
   <!-- Recommend -->
   <div class="section recommend">
     <div class="container">
-      <h3 class="section-title">GOT A BOOK TO RECOMMEND?</h3>
-      <p>Shoot us an email at <a class="recommend-email" href="#">uxbooks@gmail.com</a></p>
+      <h3 class="section-title">Submit a Book Recommendation</h3>
+      <p>Read anything good lately? Shoot us an email at <a class="recommend-email" href="#">uxbooks@gmail.com</a></p>
       <p>Make sure to include the book title and why you believe every designer should read it!</p>
     </div>
   </div>
@@ -156,11 +147,15 @@
   <!-- Footer -->
   <footer class="section footer">
     <div class="container">
-      <h3 class="footer-about">ABOUT THIS PROJECT</h3>
-      <p class="footer-description">UX Books is a place to discover the best books and expand the knowledge of anyone who makes things. It was created and curated by <a href="http://www.grahamgrimaldi.com" target="_blank">Graham Grimaldi</a>, a design and tech nerd who enjoys reading.</p>
+      <h3 class="section-title">ABOUT THIS PROJECT</h3>
+      <p class="footer-description">UX Books is a place to discover the best books and expand the knowledge of anyone who makes things. It was created and curated by <a href="http://www.grahamgrimaldi.com" target="_blank">Graham Grimaldi</a>, a design and tech nerd who enjoys reading.
+      <br/>
+      <br/>
+      We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
       <a href="#top">
         <button class="btn btn-secondary">Back to Top</button>
       </a>
+      <img class="footer-image" src="img/book.svg" alt="ux books logo">
     </div>
   </footer>
 

@@ -34,7 +34,7 @@
 
 .col-four {
   @include respond-to('tablet') {
-    flex-basis: 23%;
+    flex-basis: 24%;
   }
 }
 

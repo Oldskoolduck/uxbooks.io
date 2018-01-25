@@ -42,6 +42,9 @@
     width: 170px;
     img {
       box-shadow: $box-shadow-hover;
+      @include respond-to('desktop') {
+        float: right;
+      }
     }
   }
   &-description {

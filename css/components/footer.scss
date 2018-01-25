@@ -5,9 +5,35 @@
     font-size: $heading-3;
   }
   &-description {
-    padding: 40px 0;
+    padding: 0 0 35px 0;
     @include respond-to('tablet') {
-      padding: 40px 120px;
+      padding: 0 300px 35px 0;
     }
   }
+  &-image {
+    box-shadow: $box-shadow-hover;
+    transition: 0.70s;
+    height: 170px;
+    float: right;
+    margin-top: -240px;
+    display: none;
+    @include respond-to('tablet') {
+      display: block;
+    }
+    &:hover {
+      -webkit-animation: spin 1s ease-in-out;
+    }
+  }
+}
+
+@-webkit-keyframes spin {
+    15% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(80deg) scale(1.5);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
 }

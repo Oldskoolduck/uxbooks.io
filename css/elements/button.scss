@@ -38,3 +38,14 @@
     background-color: $color-primary;
   }
 }
+
+.btn-light {
+  background-color: $color-white;
+  color: $color-primary;
+  box-shadow: $box-shadow;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: $box-shadow-hover;
+  }
+}
