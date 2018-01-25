@@ -41,6 +41,6 @@
 .col-two-four {
   flex-basis: 100%;
   @include respond-to('tablet') {
-    flex-basis: 46%;
+    flex-basis: 52%;
   }
 }

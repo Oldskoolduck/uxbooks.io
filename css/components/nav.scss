@@ -48,6 +48,7 @@
   display: inline-block;
   margin: 12px 12px 0 0;
   font-weight: $weight-bold;
+  color: $color-dark;
   &:hover {
     text-decoration: underline;
     text-decoration-color: $color-primary;
@@ -65,7 +66,7 @@
   left: -1px;
   width: 320px;
   text-align: left;
-  border: 0.5px solid rgba($color-grey, 0.5);
+  box-shadow: $box-shadow;
   border-bottom-left-radius: $rounded;
   border-bottom-right-radius: $rounded;
   li a {

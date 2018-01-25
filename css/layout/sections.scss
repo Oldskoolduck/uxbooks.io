@@ -52,8 +52,6 @@
   }
 }
 
-
-
 .featured {
   background-color: rgba($color-white, 0.7);
   &-image {
@@ -81,14 +79,7 @@
   }
 }
 
-.explore {
-  &-button {
-    display: inline-block;
-    margin-right: 15px;
-  }
-}
-
-.recommend {
+.submit {
   background: $color-brown;
   color: $color-accent;
 }

@@ -32,20 +32,19 @@
   -->
   <!-- Sticky Nav -->
   <div class="nav-sticky">
-    <a href="../">
+    <a href="/">
       <img class="nav-sticky-logo" src="../img/book.svg" alt="ux books logo">
     </a>
-    <label class="nav-sticky-item" for="menu-toggle">Categories</label>
+    <label class="nav-sticky-item nav-category-label" for="menu-toggle">Categories</label>
     <input type="checkbox" id="menu-toggle"/>
     <ul id="menu">
-      <li><a href="/ux-fundamentals">UX Essentials</a></li>
+      <li><a href="../ux-essentials">UX Essentials</a></li>
       <li><a href="#">Psychology &amp; Behavior</a></li>
       <li><a href="#">Practical Skills</a></li>
       <li><a href="#">Web Design &amp; Development</a></li>
     </ul>
-    <p class="nav-sticky-item">Share</p>
-    <p class="nav-sticky-item">Submit</p>
-
+    <a href="#" class="nav-sticky-item">Share</a>
+    <a href="#submit" class="nav-sticky-item">Submit</a>
   </div>
 
   <!-- Hero -->
@@ -60,7 +59,7 @@
   <div class="section">
     <div class="container">
       <div class="col-layout">
-        <div class="col col-four book-cover-category">
+        <div class="col col-four book-cover-category" id="norman">
           <a href="https://www.amazon.com/gp/product/0465050654/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=9213e18c85d084e3ecb8a63be2c0eaff" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0465050654&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0465050654"/>
         </div>
         <div class="col col-two-four">
@@ -81,7 +80,7 @@
       <hr class="book-separator"/><!-- Divider Line -->
 
       <div class="col-layout">
-        <div class="col col-four book-cover-category">
+        <div class="col col-four book-cover-category" id="krug">
           <a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516731227&sr=1-1&keywords=dont+make+me+think&linkCode=li3&tag=uxbooks0c-20&linkId=9ec0f1c0cbd822a867f503d228e01505" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321965515&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321965515"/>
         </div>
         <div class="col col-two-four">
@@ -102,7 +101,7 @@
       <hr class="book-separator"/><!-- Divider Line -->
 
       <div class="col-layout">
-        <div class="col col-four book-cover-category">
+        <div class="col col-four book-cover-category" id="garrett">
           <a href="https://www.amazon.com/gp/product/0321683684/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=c145b6e0f6ae0970dbf74320e7b18210" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321683684&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321683684"/>
         </div>
         <div class="col col-two-four">
@@ -123,7 +122,7 @@
       <hr class="book-separator"/><!-- Divider Line -->
 
       <div class="col-layout">
-        <div class="col col-four book-cover-category">
+        <div class="col col-four book-cover-category" id="krug2">
           <a href="https://www.amazon.com/gp/product/0321657292/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=9af1cf84e70c02849ed35cd101a79ccc" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321657292&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321657292"/>
         </div>
         <div class="col col-two-four">
@@ -213,18 +212,27 @@
   <div class="section">
     <div class="container">
       <h3 class="section-title">EXPLORE UX BOOKS</h3>
-      <a href="#"><button class="btn btn-secondary explore-button">UX Fundamentals</button></a>
-      <a href="#"><button class="btn btn-secondary explore-button">Great References</button></a>
-      <a href="#"><button class="btn btn-secondary explore-button">Visual Design</button></a>
-      <a href="#"><button class="btn btn-secondary explore-button">Web Design &amp; Development</button></a>
+      <a href="../ux-essentials/">
+        <button class="btn btn-light hero-btn">UX Essentials</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Practical Skills</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      </a>
     </div>
   </div>
 
   <!-- Recommend -->
-  <div class="section recommend">
+  <div class="section submit" id="submit">
     <div class="container">
-      <h3 class="section-title">GOT A BOOK TO RECOMMEND?</h3>
-      <p>Shoot us an email at <a href="#">uxbooks@gmail.com</a> <br/>Make sure to include the book title and why you believe every designer should read it!</p>
+      <h3 class="section-title">Submit a Book Recommendation</h3>
+      <p>Read anything good lately? Shoot us an email at <a class="recommend-email" href="#">uxbooks@gmail.com</a></p>
+      <p>Make sure to include the book title and why you believe every designer should read it!</p>
     </div>
   </div>
 

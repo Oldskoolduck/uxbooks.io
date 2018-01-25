@@ -26,14 +26,13 @@
     <label class="nav-sticky-item nav-category-label" for="menu-toggle">Categories</label>
     <input type="checkbox" id="menu-toggle"/>
     <ul id="menu">
-      <li><a href="/ux-fundamentals">UX Essentials</a></li>
+      <li><a href="/ux-essentials">UX Essentials</a></li>
       <li><a href="#">Psychology &amp; Behavior</a></li>
       <li><a href="#">Practical Skills</a></li>
       <li><a href="#">Web Design &amp; Development</a></li>
     </ul>
-    <p class="nav-sticky-item">Share</p>
-    <p class="nav-sticky-item">Submit</p>
-
+    <a href="#" class="nav-sticky-item">Share</a>
+    <a href="#submit" class="nav-sticky-item">Submit</a>
   </div>
 
   <!-- Hero -->
@@ -41,10 +40,18 @@
     <div class="container">
       <h1 class="hero-title">UX BOOKS</h1>
       <p class="hero-subtitle">Hand-picked collections of the most important books for anyone who makes things.</p>
-      <button class="btn btn-light hero-btn">UX Essentials</button>
-      <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
-      <button class="btn btn-light hero-btn">Practical Skills</button>
-      <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      <a href="ux-essentials/">
+        <button class="btn btn-light hero-btn">UX Essentials</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Practical Skills</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      </a>
     </div>
   </header>
 
@@ -53,33 +60,37 @@
     <div class="container">
       <h3 class="section-title">Featured Book of the Month</h3>
       <div class="col-layout">
-        <div class="col col-two">
-          <img class="featured-image" src="img/donnorman.jpg" alt="design of everyday things by don norman">
+        <div class="col col-four book-cover-category">
+          <a href="https://www.amazon.com/gp/product/0465050654/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=9213e18c85d084e3ecb8a63be2c0eaff" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0465050654&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0465050654"/>
         </div>
-        <div class="col col-two featured-description">
-          <h3 class="featured-title">The Design of Everyday Things</h3>
-          <p class="featured-author">Don Norman</p>
-          <p>Synopsis lorem ipsum dolor sit amet avet consectetuer lorem ipsum dolor sit amet avet consectetuer lorem ipsum</p>
-          <a href="#">
-            <button class="btn btn-primary featured-button">Buy on Amazon</button>
+        <div class="col col-two-four">
+          <div class="book-info-category">
+            <a class="book-title" target="_blank" href="http://amzn.to/2F5BiXW">The Design of Everyday Things</a>
+            <p class="book-author">Don Norman</p>
+            <p class="book-description">Delightfully entertaining, eye-opening, and insightful, cognitive scientist Don Norman's essential book is a must-read for anyone interested in how and why products either frustrate or satisfy the user. This book brilliantly changes your perspective of the world. You'll never see a door handle or a light switch the same way again.</p>
+          </div>
+        </div>
+        <div class="col col-four">
+          <a target="_blank" href="http://amzn.to/2F5BiXW">
+            <button class="btn btn-primary">Buy on Amazon</button>
           </a>
+          <a class="book-tray-link" href="#">Share</a>
         </div>
-      </div>
+      </div><!-- Col Layout 1 -->
     </div>
   </div>
 
   <!-- Category 1 -->
   <div class="section">
     <div class="container">
-      <a href="/ux-fundamentals">
+      <a href="/ux-essentials">
         <h3 class="section-title">Fundamentals of UX <br/>
-        <span>8 Books</span></h3>
+        <span>7 Books</span></h3>
       </a>
       <div class="col-layout">
         <div class="col col-four">
-          <a href="#">
-            <div class="book">
-              <img src="book-covers/dont-make-me-think.jpg" alt="don't make me think book">
+          <a href="ux-essentials/#norman">
+            <div class="book book-norman">
               <div class="book-info">
                 <p class="book-title">The Design of Everyday Things</p>
                 <p class="book-author">Don Norman</p>
@@ -88,38 +99,38 @@
           </a>
         </div>
         <div class="col col-four">
-          <a href="#">
-            <div class="book">
+          <a href="ux-essentials/#krug">
+            <div class="book book-krug">
               <div class="book-info">
-                <p class="book-title">The Design of Everyday Things</p>
-                <p class="book-author">Don Norman</p>
+                <p class="book-title">Don't Make Me Think</p>
+                <p class="book-author">Steve Krug</p>
               </div>
             </div>
           </a>
         </div>
         <div class="col col-four">
-          <a href="#">
-            <div class="book">
+          <a href="ux-essentials/#garrett">
+            <div class="book book-garrett">
               <div class="book-info">
-                <p class="book-title">The Design of Everyday Things</p>
-                <p class="book-author">Don Norman</p>
+                <p class="book-title">The Elements of User Experience</p>
+                <p class="book-author">Jesse James Garrett</p>
               </div>
             </div>
           </a>
         </div>
         <div class="col col-four">
-          <a href="#">
-            <div class="book">
+          <a href="ux-essentials/#krug2">
+            <div class="book book-krug2">
               <div class="book-info">
-                <p class="book-title">The Design of Everyday Things</p>
-                <p class="book-author">Don Norman</p>
+                <p class="book-title">Rocket Surgery Made Easy</p>
+                <p class="book-author">Steve Krug</p>
               </div>
             </div>
           </a>
         </div>
       </div>
-      <a href="ux-fundamentals/">
-      <button class="btn btn-secondary section-seeall">See All<i class="material-icons">keyboard_arrow_right</i></button>
+      <a href="ux-essentials/">
+      <button class="btn btn-light section-seeall">See All<i class="material-icons">keyboard_arrow_right</i></button>
       </a>
     </div>
   </div>
@@ -128,15 +139,23 @@
   <div class="section">
     <div class="container">
       <h3 class="section-title">EXPLORE UX BOOKS</h3>
-      <a href="#"><button class="btn btn-secondary  explore-button">UX Fundamentals</button></a>
-      <a href="#"><button class="btn btn-secondary  explore-button">Great References</button></a>
-      <a href="#"><button class="btn btn-secondary  explore-button">Visual Design</button></a>
-      <a href="#"><button class="btn btn-secondary  explore-button">Web Design &amp; Development</button></a>
+      <a href="ux-essentials/">
+        <button class="btn btn-light hero-btn">UX Essentials</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Practical Skills</button>
+      </a>
+      <a href="#">
+        <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      </a>
     </div>
   </div>
 
   <!-- Recommend -->
-  <div class="section recommend">
+  <div class="section submit" id="submit">
     <div class="container">
       <h3 class="section-title">Submit a Book Recommendation</h3>
       <p>Read anything good lately? Shoot us an email at <a class="recommend-email" href="#">uxbooks@gmail.com</a></p>
@@ -153,7 +172,7 @@
       <br/>
       We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
       <a href="#top">
-        <button class="btn btn-secondary">Back to Top</button>
+        <button class="btn btn-primary">Back to Top</button>
       </a>
       <img class="footer-image" src="img/book.svg" alt="ux books logo">
     </div>
