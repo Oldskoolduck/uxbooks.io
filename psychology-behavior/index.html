@@ -4,12 +4,20 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>UX Books | Psychology &amp; Behavior</title>
-  <meta name="description" content="UX Books">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon"/>
+  <meta name="description" content="UX Books features the most essential UX design books for prospective user experience designers. We create lists of must-read design books to help you learn UX design fundamentals and best practices for usability, user research, information architecture, wireframing and more.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:url"                content="https://uxbooks.io/psychology-behavior/" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="UX Books | Psychology &amp; Behavior" />
+  <meta property="og:description"        content="Hand-picked collections of UX design books for anyone who makes things." />
+  <meta property="og:image"              content="../img/fb-img-psychology.jpg" />
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
+
   <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:400,800" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
@@ -32,19 +40,18 @@
   -->
   <!-- Sticky Nav -->
   <div class="nav-sticky">
-    <a href="/">
+    <a class="nav-sticky-logo" href="/">
       <img class="nav-sticky-logo" src="../img/book.svg" alt="ux books logo">
     </a>
-    <label class="nav-sticky-item nav-category-label" for="menu-toggle">Categories</label>
-    <input type="checkbox" id="menu-toggle"/>
-    <ul id="menu">
-      <li><a href="../ux-essentials">UX Fundamentals</a></li>
-      <li><a href="../psychology-behavior">Psychology &amp; Behavior</a></li>
-      <li><a href="#">Practical Skills</a></li>
-      <li><a href="#">Web Design &amp; Development</a></li>
-    </ul>
-    <a href="#" class="nav-sticky-item">Share</a>
-    <a href="#submit" class="nav-sticky-item">Submit</a>
+      <a onclick="myFunction()" class="dropbtn nav-sticky-item">Categories</a>
+      <div id="myDropdown" class="nav-sticky-menu">
+        <a href="/ux-fundamentals">UX Fundamentals</a>
+        <a href="/psychology-behavior">Psychology &amp; Behavior</a>
+        <a href="#">Practical Skills</a>
+        <a href="#">Web Design &amp; Development</a>
+      </div>
+      <a href="#submit" class="nav-sticky-item">Share</a>
+      <a href="#submit" class="nav-sticky-item">Submit</a>
   </div>
 
   <!-- Hero -->
@@ -59,18 +66,18 @@
   <div class="section">
     <div class="container">
       <div class="col-layout">
-        <div class="col col-four book-cover-category" id="norman">
-          <a href="https://www.amazon.com/gp/product/0465050654/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=9213e18c85d084e3ecb8a63be2c0eaff" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0465050654&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0465050654"/>
+        <div class="col col-four book-cover-category" id="eyal">
+          <a href="https://www.amazon.com/Hooked-How-Build-Habit-Forming-Products/dp/1591847788/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516997235&sr=1-1&keywords=hooked&linkCode=li3&tag=uxbooks0c-20&linkId=50c528d197a859678889b05283a1162f" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1591847788&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=1591847788"/>
         </div>
         <div class="col col-two-four">
           <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2F5BiXW">The Design of Everyday Things</a>
-            <p class="book-author">Don Norman</p>
-            <p class="book-description">Delightfully entertaining, eye-opening, and insightful, cognitive scientist Don Norman's essential book is a must-read for anyone interested in how and why products either frustrate or satisfy the user. This book brilliantly changes your perspective of the world. You'll never see a door handle or a light switch the same way again.</p>
+            <a class="book-title" target="_blank" href="http://amzn.to/2Bv7Zfl">Hooked: How to Build Habit-Forming Products</a>
+            <p class="book-author">Nir Eyal</p>
+            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
           </div>
         </div>
         <div class="col col-four book-actions">
-          <a target="_blank" href="http://amzn.to/2F5BiXW">
+          <a target="_blank" href="http://amzn.to/2Bv7Zfl">
             <button class="btn btn-primary">Buy on Amazon</button>
           </a>
           <a class="book-tray-link" href="#">Share</a>
@@ -80,18 +87,18 @@
       <hr class="book-separator"/><!-- Divider Line -->
 
       <div class="col-layout">
-        <div class="col col-four book-cover-category" id="krug">
-          <a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516731227&sr=1-1&keywords=dont+make+me+think&linkCode=li3&tag=uxbooks0c-20&linkId=9ec0f1c0cbd822a867f503d228e01505" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321965515&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321965515"/>
+        <div class="col col-four book-cover-category" id="kahneman">
+          <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374275637/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516997416&sr=1-1&keywords=thinking+fast+and+slow&linkCode=li3&tag=uxbooks0c-20&linkId=41f07fb8314cfeceb1c4ba4140e3a7bb" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0374275637&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0374275637" />
         </div>
         <div class="col col-two-four">
           <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2F5qaKC">Don't Make Me Think</a>
-            <p class="book-author">Steve Krug</p>
+            <a class="book-title" target="_blank" href="http://amzn.to/2BvWLam">Thinking Fast And Slow</a>
+            <p class="book-author">Daniel Kahneman</p>
             <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
           </div>
         </div>
         <div class="col col-four book-actions">
-          <a target="_blank" href="http://amzn.to/2F5qaKC">
+          <a target="_blank" href="http://amzn.to/2BvWLam">
             <button class="btn btn-primary">Buy on Amazon</button>
           </a>
           <a class="book-tray-link" href="#">+ Add to Tray</a>
@@ -101,18 +108,18 @@
       <hr class="book-separator"/><!-- Divider Line -->
 
       <div class="col-layout">
-        <div class="col col-four book-cover-category" id="garrett">
-          <a href="https://www.amazon.com/gp/product/0321683684/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=c145b6e0f6ae0970dbf74320e7b18210" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321683684&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321683684"/>
+        <div class="col col-four book-cover-category" id="nodder">
+          <a href="https://www.amazon.com/Evil-Design-Interaction-Lead-Temptation/dp/1118422147/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516997540&sr=1-1&keywords=evil+by+design&linkCode=li3&tag=uxbooks0c-20&linkId=c132dd44900bdd03ba62986d74c161fa" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1118422147&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=1118422147" />
         </div>
         <div class="col col-two-four">
           <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2GeOFX1">The Elements of User Experience</a>
-            <p class="book-author">Jesse James Garrett</p>
+            <a class="book-title" target="_blank" href="http://amzn.to/2Bv7txO">Evil by Design: Interaction Design to Lead Us into Temptation</a>
+            <p class="book-author">Chris Nodder</p>
             <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
           </div>
         </div>
         <div class="col col-four book-actions">
-          <a target="_blank" href="http://amzn.to/2F5qaKC">
+          <a target="_blank" href="http://amzn.to/2Bv7txO">
             <button class="btn btn-primary">Buy on Amazon</button>
           </a>
           <a class="book-tray-link" href="#">+ Add to Tray</a>
@@ -123,85 +130,22 @@
 
       <div class="col-layout">
         <div class="col col-four book-cover-category" id="krug2">
-          <a href="https://www.amazon.com/gp/product/0321657292/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=9af1cf84e70c02849ed35cd101a79ccc" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321657292&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321657292"/>
+          <a href="https://www.amazon.com/Designing-Products-People-Love-Successful/dp/1491923679/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516997636&sr=1-1&keywords=designing+products+people+love&linkCode=li3&tag=uxbooks0c-20&linkId=ca9aaa849a6201fa36dda1193f886622" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1491923679&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=1491923679"/>
         </div>
         <div class="col col-two-four">
           <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2Dw74wQ">Rocket Surgery Made Easy</a>
+            <a class="book-title" target="_blank" href="http://amzn.to/2Fk2uT7">Designing Products People Love</a>
             <p class="book-author">Steve Krug</p>
             <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
           </div>
         </div>
         <div class="col col-four book-actions">
-          <a target="_blank" href="http://amzn.to/2F5qaKC">
+          <a target="_blank" href="http://amzn.to/2Fk2uT7">
             <button class="btn btn-primary">Buy on Amazon</button>
           </a>
           <a class="book-tray-link" href="#">+ Add to Tray</a>
         </div>
       </div><!-- Col Layout 4 -->
-
-      <hr class="book-separator"/><!-- Divider Line -->
-
-      <div class="col-layout">
-        <div class="col col-four book-cover-category">
-          <a href="https://www.amazon.com/Project-Guide-Design-experience-designers/dp/0321815386/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516810998&sr=1-1&keywords=project+guide+to+ux&linkCode=li3&tag=uxbooks0c-20&linkId=b20589bca57d562195d5560e43be4bde" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321815386&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321815386" />
-        </div>
-        <div class="col col-two-four">
-          <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2E5QHZb">A Project Guide to UX Design</a>
-            <p class="book-author">Russ Unger &amp; Carolyn Chandler</p>
-            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
-          </div>
-        </div>
-        <div class="col col-four book-actions">
-          <a target="_blank" href="http://amzn.to/2F5qaKC">
-            <button class="btn btn-primary">Buy on Amazon</button>
-          </a>
-          <a class="book-tray-link" href="#">+ Add to Tray</a>
-        </div>
-      </div><!-- Col Layout 5 -->
-
-      <hr class="book-separator"/><!-- Divider Line -->
-
-      <div class="col-layout">
-        <div class="col col-four book-cover-category">
-          <a href="https://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/1118766571/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516811143&sr=1-1&keywords=about+face+3&linkCode=li3&tag=uxbooks0c-20&linkId=4a6b451757139653a186001a43a517ac" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1118766571&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=1118766571" />
-        </div>
-        <div class="col col-two-four">
-          <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2Ggvoos">About Face: The Essentials of Interaction Design</a>
-            <p class="book-author">Alan Cooper</p>
-            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
-          </div>
-        </div>
-        <div class="col col-four book-actions">
-          <a target="_blank" href="http://amzn.to/2F5qaKC">
-            <button class="btn btn-primary">Buy on Amazon</button>
-          </a>
-          <a class="book-tray-link" href="#">+ Add to Tray</a>
-        </div>
-      </div><!-- Col Layout 6 -->
-
-      <hr class="book-separator"/><!-- Divider Line -->
-
-      <div class="col-layout">
-        <div class="col col-four book-cover-category">
-          <a href="https://www.amazon.com/User-Experience-Team-One-Research/dp/1933820187/ref=as_li_ss_il?s=books&ie=UTF8&qid=1516811418&sr=1-1&keywords=ux+team+of+one&linkCode=li3&tag=uxbooks0c-20&linkId=3c84979ef2fef2ff1480c8ffcb8ed65d" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1933820187&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=1933820187" />
-        </div>
-        <div class="col col-two-four">
-          <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2rzqlMz">The User Experience Team of One: A Research and Design Survival Guide</a>
-            <p class="book-author">Alan Cooper</p>
-            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
-          </div>
-        </div>
-        <div class="col col-four book-actions">
-          <a target="_blank" href="http://amzn.to/2F5qaKC">
-            <button class="btn btn-primary">Buy on Amazon</button>
-          </a>
-          <a class="book-tray-link" href="#">+ Add to Tray</a>
-        </div>
-      </div><!-- Col Layout 7 -->
 
       <hr class="book-separator"/><!-- Divider Line -->
 
@@ -257,5 +201,6 @@
       ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
