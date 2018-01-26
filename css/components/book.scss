@@ -15,7 +15,8 @@
     box-shadow: $box-shadow-hover;
   }
   &:hover .book-info {
-    padding-bottom: 40px;
+    height: 160px;
+    @include transition;
   }
   &:hover .book-title {
     text-decoration: underline;

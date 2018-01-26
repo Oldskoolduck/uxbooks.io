@@ -6,7 +6,7 @@
   right: 0;
   margin: 0 auto;
   padding: 10px;
-  width: 320px;
+  width: 340px;
   height: 52px;
   background-color: rgba($color-white, 0.96);
   z-index: 200;
@@ -24,12 +24,15 @@
   }
   &-item {
     display: inline-block;
-    margin: 4px 10px 0 0;
+    padding: 4px 12px 0 0;
     font-weight: $weight-bold;
     color: $color-dark;
     &:hover {
       text-decoration: underline;
       text-decoration-color: $color-primary;
+    }
+    &:last-of-type {
+      padding-right: 0px;
     }
   }
   &-menu {
