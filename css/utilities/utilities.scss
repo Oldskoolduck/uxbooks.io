@@ -7,3 +7,8 @@
 .text-left {
   text-align: left;
 }
+
+.show {
+  display: block;
+  @include transition;
+}

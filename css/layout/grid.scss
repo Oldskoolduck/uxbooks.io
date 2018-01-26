@@ -33,14 +33,16 @@
 }
 
 .col-four {
+  @include respond-to('mobile') {
+    flex-basis: 48%;
+  }
   @include respond-to('tablet') {
     flex-basis: 24%;
   }
 }
 
 .col-two-four {
-  flex-basis: 100%;
   @include respond-to('tablet') {
-    flex-basis: 52%;
+    flex-basis: 48%;
   }
 }

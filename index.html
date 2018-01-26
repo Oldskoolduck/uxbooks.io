@@ -4,13 +4,20 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>UX Books</title>
-  <meta name="description" content="UX Books">
+  <meta name="description" content="UX Books features the most essential UX design books for prospective user experience designers. We create lists of must-read design books to help you learn UX design fundamentals and best practices for usability, user research, information architecture, wireframing and more.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:url"                content="https://uxbooks.io" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="UX Books" />
+  <meta property="og:description"        content="Hand-picked collections of UX design books for anyone who makes things." />
+  <meta property="og:image"              content="img/fb-img-home.jpg" />
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400|Neuton:400,800|Material+Icons" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:400,800" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -20,28 +27,34 @@
 
   <!-- Sticky Nav -->
   <div class="nav-sticky">
-    <a href="/">
+    <a class="nav-sticky-logo" href="/">
       <img class="nav-sticky-logo" src="img/book.svg" alt="ux books logo">
     </a>
-    <label class="nav-sticky-item nav-category-label" for="menu-toggle">Categories</label>
-    <input type="checkbox" id="menu-toggle"/>
-    <ul id="menu">
-      <li><a href="/ux-essentials">UX Essentials</a></li>
-      <li><a href="#">Psychology &amp; Behavior</a></li>
-      <li><a href="#">Practical Skills</a></li>
-      <li><a href="#">Web Design &amp; Development</a></li>
-    </ul>
-    <a href="#" class="nav-sticky-item">Share</a>
-    <a href="#submit" class="nav-sticky-item">Submit</a>
+      <a onclick="myFunction()" class="dropbtn nav-sticky-item">Categories</a>
+      <div id="myDropdown" class="nav-sticky-menu">
+        <a href="/ux-fundamentals">UX Fundamentals</a>
+        <a href="/psychology-behavior">Psychology &amp; Behavior</a>
+        <a href="#">Practical Skills</a>
+        <a href="#">Web Design &amp; Development</a>
+      </div>
+      <a href="#submit" class="nav-sticky-item">Submit</a>
   </div>
+
+  <!-- <div class="a2a_kit a2a_kit_size_50 a2a_default_style">
+      <p class="article_share_title">SHARE: </p>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_reddit"></a>
+      <a class="a2a_button_email"></a>
+  </div> -->
 
   <!-- Hero -->
   <header class="hero" id="top">
     <div class="container">
       <h1 class="hero-title">UX BOOKS</h1>
       <p class="hero-subtitle">Hand-picked collections of the most important books for anyone who makes things.</p>
-      <a href="ux-essentials/">
-        <button class="btn btn-light hero-btn">UX Essentials</button>
+      <a href="ux-fundamentals/">
+        <button class="btn btn-light hero-btn">UX Fundamentals</button>
       </a>
       <a href="#">
         <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
@@ -61,20 +74,20 @@
       <h3 class="section-title">Featured Book of the Month</h3>
       <div class="col-layout">
         <div class="col col-four book-cover-category">
-          <a href="https://www.amazon.com/gp/product/0465050654/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=9213e18c85d084e3ecb8a63be2c0eaff" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0465050654&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0465050654"/>
+          <a href="https://www.amazon.com/gp/product/0321683684/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=uxbooks0c-20&linkId=c145b6e0f6ae0970dbf74320e7b18210" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0321683684&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0321683684"/>
         </div>
         <div class="col col-two-four">
           <div class="book-info-category">
-            <a class="book-title" target="_blank" href="http://amzn.to/2F5BiXW">The Design of Everyday Things</a>
-            <p class="book-author">Don Norman</p>
-            <p class="book-description">Delightfully entertaining, eye-opening, and insightful, cognitive scientist Don Norman's essential book is a must-read for anyone interested in how and why products either frustrate or satisfy the user. This book brilliantly changes your perspective of the world. You'll never see a door handle or a light switch the same way again.</p>
+            <a class="book-title" target="_blank" href="http://amzn.to/2GeOFX1">The Elements of User Experience</a>
+            <p class="book-author">Jesse James Garrett</p>
+            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
           </div>
         </div>
-        <div class="col col-four">
-          <a target="_blank" href="http://amzn.to/2F5BiXW">
+        <div class="col col-four book-actions">
+          <a target="_blank" href="http://amzn.to/2F5qaKC">
             <button class="btn btn-primary">Buy on Amazon</button>
           </a>
-          <a class="book-tray-link" href="#">Share</a>
+          <a class="book-tray-link" href="#">+ Add to Tray</a>
         </div>
       </div><!-- Col Layout 1 -->
     </div>
@@ -83,13 +96,13 @@
   <!-- Category 1 -->
   <div class="section">
     <div class="container">
-      <a href="/ux-essentials">
-        <h3 class="section-title">Fundamentals of UX <br/>
+      <a href="/ux-fundamentals">
+        <h3 class="section-title">UX Fundamentals<br/>
         <span>7 Books</span></h3>
       </a>
       <div class="col-layout">
         <div class="col col-four">
-          <a href="ux-essentials/#norman">
+          <a href="ux-fundamentals/#norman">
             <div class="book book-norman">
               <div class="book-info">
                 <p class="book-title">The Design of Everyday Things</p>
@@ -99,7 +112,7 @@
           </a>
         </div>
         <div class="col col-four">
-          <a href="ux-essentials/#krug">
+          <a href="ux-fundamentals/#krug">
             <div class="book book-krug">
               <div class="book-info">
                 <p class="book-title">Don't Make Me Think</p>
@@ -109,7 +122,7 @@
           </a>
         </div>
         <div class="col col-four">
-          <a href="ux-essentials/#garrett">
+          <a href="ux-fundamentals/#garrett">
             <div class="book book-garrett">
               <div class="book-info">
                 <p class="book-title">The Elements of User Experience</p>
@@ -119,7 +132,7 @@
           </a>
         </div>
         <div class="col col-four">
-          <a href="ux-essentials/#krug2">
+          <a href="ux-fundamentals/#krug2">
             <div class="book book-krug2">
               <div class="book-info">
                 <p class="book-title">Rocket Surgery Made Easy</p>
@@ -129,17 +142,72 @@
           </a>
         </div>
       </div>
-      <a href="ux-essentials/">
-      <button class="btn btn-light section-seeall">See All<i class="material-icons">keyboard_arrow_right</i></button>
+      <a href="ux-fundamentals/">
+      <button class="btn btn-light section-seeall">See All<i ></i></button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Category 2 -->
+  <div class="section">
+    <div class="container">
+      <a href="/psychology-behavior">
+        <h3 class="section-title">Psychology &amp; Behavior <br/>
+        <span>7 Books</span></h3>
+      </a>
+      <div class="col-layout">
+        <div class="col col-four">
+          <a href="ux-essentials/#norman">
+            <div class="book book-eyal">
+              <div class="book-info">
+                <p class="book-title">Hooked: How to Build Habit-Forming Products</p>
+                <p class="book-author">Nir Eyal</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="ux-essentials/#krug">
+            <div class="book book-kahneman">
+              <div class="book-info">
+                <p class="book-title">Thinking Fast And Slow</p>
+                <p class="book-author">Daniel Kahneman</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="ux-essentials/#garrett">
+            <div class="book book-nodder">
+              <div class="book-info">
+                <p class="book-title">Evil By Design</p>
+                <p class="book-author">Chris Nodder</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="ux-essentials/#krug2">
+            <div class="book book-hurff">
+              <div class="book-info">
+                <p class="book-title">Designing Products People Love</p>
+                <p class="book-author">Scott Hurff</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="psychology-behavior/">
+      <button class="btn btn-light section-seeall">See All<i ></i></button>
       </a>
     </div>
   </div>
 
   <!-- Explore -->
-  <div class="section">
+  <div class="section explore">
     <div class="container">
       <h3 class="section-title">EXPLORE UX BOOKS</h3>
-      <a href="ux-essentials/">
+      <a href="ux-fundamentals/">
         <button class="btn btn-light hero-btn">UX Essentials</button>
       </a>
       <a href="#">
@@ -184,5 +252,7 @@
       ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

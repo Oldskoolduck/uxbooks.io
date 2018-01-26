@@ -1,10 +1,11 @@
 .book {
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   border-radius: $rounded;
   box-shadow: $box-shadow;
-  min-height: 400px;
+  min-height: 420px;
   position: relative;
-  overflow: hidden;
   @include transition;
   margin-bottom: 24px;
   @include respond-to('desktop') {
@@ -27,7 +28,9 @@
   }
   &-info {
     @include transition;
+    width: 100%;
     padding: 30px;
+    height: 140px;
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -48,6 +51,11 @@
       }
     }
   }
+  &-actions {
+    @include respond-to('desktop') {
+      text-align: center;
+    }
+  }
   &-description {
     margin-bottom: 12px;
   }
@@ -57,9 +65,9 @@
   }
   &-title {
     @include transition;
-    font-family: $font-family-heading;
+    font-family: $font-family-body;
     font-weight: $weight-bold;
-    font-size: $heading-3;
+    font-size: $body-text;
   }
   &-author {
     font-weight: $weight-normal;
@@ -83,5 +91,17 @@
   }
   &-garrett {
     background-image: url('../book-covers/elements-ux.jpg');
+  }
+  &-eyal {
+    background-image: url('../book-covers/hooked.jpg');
+  }
+  &-kahneman {
+    background-image: url('../book-covers/thinking-fast.jpg');
+  }
+  &-nodder {
+    background-image: url('../book-covers/evil.jpg');
+  }
+  &-hurff {
+    background-image: url('../book-covers/people-love.jpg');
   }
 }
