@@ -4,12 +4,20 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>UX Books | UX Fundamentals</title>
-  <meta name="description" content="UX Books">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon"/>
+  <meta name="description" content="UX Books features the most essential UX design books for prospective user experience designers. We create lists of must-read design books to help you learn UX design fundamentals and best practices for usability, user research, information architecture, wireframing and more.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:url"                content="https://uxbooks.io" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="UX Books | UX Fundamentals" />
+  <meta property="og:description"        content="Hand-picked collections of UX design books for anyone who makes things." />
+  <meta property="og:image"              content="../img/fb-img-fundamentals.jpg" />
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
+
   <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:400,800" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
@@ -32,19 +40,18 @@
   -->
   <!-- Sticky Nav -->
   <div class="nav-sticky">
-    <a href="/">
+    <a class="nav-sticky-logo" href="/">
       <img class="nav-sticky-logo" src="../img/book.svg" alt="ux books logo">
     </a>
-    <label class="nav-sticky-item nav-category-label" for="menu-toggle">Categories</label>
-    <input type="checkbox" id="menu-toggle"/>
-    <ul id="menu">
-      <li><a href="../ux-essentials">UX Fundamentals</a></li>
-      <li><a href="#">Psychology &amp; Behavior</a></li>
-      <li><a href="#">Practical Skills</a></li>
-      <li><a href="#">Web Design &amp; Development</a></li>
-    </ul>
-    <a href="#" class="nav-sticky-item">Share</a>
-    <a href="#submit" class="nav-sticky-item">Submit</a>
+      <a onclick="myFunction()" class="dropbtn nav-sticky-item">Categories</a>
+      <div id="myDropdown" class="nav-sticky-menu">
+        <a href="/ux-fundamentals">UX Fundamentals</a>
+        <a href="/psychology-behavior">Psychology &amp; Behavior</a>
+        <a href="#">Practical Skills</a>
+        <a href="#">Web Design &amp; Development</a>
+      </div>
+      <a href="#submit" class="nav-sticky-item">Share</a>
+      <a href="#submit" class="nav-sticky-item">Submit</a>
   </div>
 
   <!-- Hero -->
@@ -257,5 +264,6 @@
       ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
