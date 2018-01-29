@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:800" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
@@ -26,33 +26,29 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Nav
-  <nav class="nav">
-    <div class="container">
-      <img class="nav-logo" src="img/book.svg" alt="ux book">
-      <ul>
-        <li class="nav-item"><a href="#">Categories</a></li>
-        <li class="nav-item"><a href="#">Submit a Book</a></li>
-        <li class="nav-item"><a href="#">Share</a></li>
-      </ul>
-    </div>
-  </nav>
-  -->
   <!-- Sticky Nav -->
-  <div class="nav-sticky">
-    <a class="nav-sticky-logo" href="/">
+  <nav class="nav-sticky">
+    <a class="nav-sticky-logo" href="../">
       <img class="nav-sticky-logo" src="../img/book.svg" alt="ux books logo">
     </a>
-      <a onclick="myFunction()" class="dropbtn nav-sticky-item">Categories</a>
-      <div id="myDropdown" class="nav-sticky-menu">
-        <a href="/ux-fundamentals">UX Fundamentals</a>
-        <a href="/psychology-behavior">Psychology &amp; Behavior</a>
-        <a href="#">Practical Skills</a>
-        <a href="#">Web Design &amp; Development</a>
+      <a onclick="categoryDropdown()" class="dropbtn nav-sticky-item">Categories</a>
+      <div id="categoryDropdown" class="nav-sticky-menu">
+        <a href="../ux-fundamentals/">UX Fundamentals</a>
+        <a href="../psychology-behavior/">Psychology &amp; Behavior</a>
+        <a href="../practical-skills/">Practical Skills</a>
+        <a href="../web-ui-design/">Web &amp; UI Design</a>
       </div>
-      <a href="#submit" class="nav-sticky-item">Share</a>
+      <a onclick="shareDropdown()" class="dropbtn nav-sticky-item">Share</a>
+      <div id="shareDropdown" class="nav-sticky-menu">
+        <div class="a2a_kit a2a_kit_size_50 a2a_default_style">
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_twitter"></a>
+          <a class="a2a_button_reddit"></a>
+          <a class="a2a_button_email"></a>
+        </div>
+      </div>
       <a href="#submit" class="nav-sticky-item">Submit</a>
-  </div>
+  </nav>
 
   <!-- Hero -->
   <header class="hero hero-category" id="top">
@@ -198,7 +194,7 @@
         <div class="col col-two-four">
           <div class="book-info-category">
             <a class="book-title" target="_blank" href="http://amzn.to/2rzqlMz">The User Experience Team of One: A Research and Design Survival Guide</a>
-            <p class="book-author">Alan Cooper</p>
+            <p class="book-author">Leah Buley</p>
             <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
           </div>
         </div>
@@ -219,17 +215,17 @@
   <div class="section explore">
     <div class="container">
       <h3 class="section-title">EXPLORE UX BOOKS</h3>
-      <a href="../ux-essentials/">
-        <button class="btn btn-light hero-btn">UX Essentials</button>
+      <a href="../ux-fundamentals/">
+        <button class="btn btn-light hero-btn">UX Fundamentals</button>
       </a>
-      <a href="#">
+      <a href="../psychology-behavior/">
         <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
       </a>
-      <a href="#">
+      <a href="../practical-skills/">
         <button class="btn btn-light hero-btn">Practical Skills</button>
       </a>
-      <a href="#">
-        <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      <a href="../web-ui-design/">
+        <button class="btn btn-light hero-btn">Web &amp; UI Design</button>
       </a>
     </div>
   </div>
@@ -264,6 +260,7 @@
       ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

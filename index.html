@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:800" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -27,28 +27,28 @@
   <![endif]-->
 
   <!-- Sticky Nav -->
-  <div class="nav-sticky">
+  <nav class="nav-sticky">
     <a class="nav-sticky-logo" href="/">
       <img class="nav-sticky-logo" src="img/book.svg" alt="ux books logo">
     </a>
-      <a onclick="myFunction()" class="dropbtn nav-sticky-item">Categories</a>
-      <div id="myDropdown" class="nav-sticky-menu">
-        <a href="/ux-fundamentals">UX Fundamentals</a>
-        <a href="/psychology-behavior">Psychology &amp; Behavior</a>
-        <a href="#">Practical Skills</a>
-        <a href="#">Web Design &amp; Development</a>
+      <a onclick="categoryDropdown()" class="dropbtn nav-sticky-item">Categories</a>
+      <div id="categoryDropdown" class="nav-sticky-menu">
+        <a href="ux-fundamentals/">UX Fundamentals</a>
+        <a href="psychology-behavior/">Psychology &amp; Behavior</a>
+        <a href="practical-skills/">Practical Skills</a>
+        <a href="web-ui-design/">Web &amp; UI Design</a>
       </div>
-      <a href="#submit" class="nav-sticky-item">Share</a>
+      <a onclick="shareDropdown()" class="dropbtn nav-sticky-item">Share</a>
+      <div id="shareDropdown" class="nav-sticky-menu">
+        <div class="a2a_kit a2a_kit_size_50 a2a_default_style">
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_twitter"></a>
+          <a class="a2a_button_reddit"></a>
+          <a class="a2a_button_email"></a>
+        </div>
+      </div>
       <a href="#submit" class="nav-sticky-item">Submit</a>
-  </div>
-
-  <!-- <div class="a2a_kit a2a_kit_size_50 a2a_default_style">
-      <p class="article_share_title">SHARE: </p>
-      <a class="a2a_button_facebook"></a>
-      <a class="a2a_button_twitter"></a>
-      <a class="a2a_button_reddit"></a>
-      <a class="a2a_button_email"></a>
-  </div> -->
+  </nav>
 
   <!-- Hero -->
   <header class="hero" id="top">
@@ -61,11 +61,11 @@
       <a href="psychology-behavior/">
         <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
       </a>
-      <a href="#">
+      <a href="practical-skills/">
         <button class="btn btn-light hero-btn">Practical Skills</button>
       </a>
-      <a href="#">
-        <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      <a href="web-ui-design/">
+        <button class="btn btn-light hero-btn">Web &amp; UI Design</button>
       </a>
     </div>
   </header>
@@ -155,7 +155,7 @@
     <div class="container">
       <a href="/psychology-behavior">
         <h3 class="section-title">Psychology &amp; Behavior <br/>
-        <span>7 Books</span></h3>
+        <span>8 Books</span></h3>
       </a>
       <div class="col-layout">
         <div class="col col-four">
@@ -205,21 +205,131 @@
     </div>
   </div>
 
+  <!-- Category 3 -->
+  <div class="section">
+    <div class="container">
+      <a href="/practical-skills">
+        <h3 class="section-title">Practical Skills <br/>
+        <span>12 Books</span></h3>
+      </a>
+      <div class="col-layout">
+        <div class="col col-four">
+          <a href="practical-skills/#greever">
+            <div class="book book-greever">
+              <div class="book-info">
+                <p class="book-title">Articulating Design Decisions</p>
+                <p class="book-author">Tom Greever</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="practical-skills/#young">
+            <div class="book book-young">
+              <div class="book-info">
+                <p class="book-title">Practical Empathy</p>
+                <p class="book-author">Indi Young</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="practical-skills/#greenburg">
+            <div class="book book-greenburg">
+              <div class="book-info">
+                <p class="book-title">Sketching User Experiences</p>
+                <p class="book-author">Saul Greenburg</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="practical-skills/#warfel">
+            <div class="book book-warfel">
+              <div class="book-info">
+                <p class="book-title">Prototyping: A Practitioners Guide</p>
+                <p class="book-author">Todd Zaki Warfel</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="/practical-skills">
+      <button class="btn btn-light section-seeall">See All<i ></i></button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Category 4 -->
+  <div class="section">
+    <div class="container">
+      <a href="/web-ui-design">
+        <h3 class="section-title">Web &amp; UI Design<br/>
+        <span>10 Books</span></h3>
+      </a>
+      <div class="col-layout">
+        <div class="col col-four">
+          <a href="web-ui-design/#mckay">
+            <div class="book book-mckay">
+              <div class="book-info">
+                <p class="book-title">UI Is Communication</p>
+                <p class="book-author">Everett N. McKay</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="web-ui-design/#anderson">
+            <div class="book book-anderson">
+              <div class="book-info">
+                <p class="book-title">Seductive Interaction Design</p>
+                <p class="book-author">Stephen P. Anderson</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="web-ui-design/#head">
+            <div class="book book-head">
+              <div class="book-info">
+                <p class="book-title">Designing Interface Animation</p>
+                <p class="book-author">Val Head</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-four">
+          <a href="web-ui-design/#raskin">
+            <div class="book book-raskin">
+              <div class="book-info">
+                <p class="book-title">The Humane Interface</p>
+                <p class="book-author">Jeff Raskin</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a href="/web-ui-design">
+      <button class="btn btn-light section-seeall">See All<i ></i></button>
+      </a>
+    </div>
+  </div>
+
   <!-- Explore -->
   <div class="section explore">
     <div class="container">
       <h3 class="section-title">EXPLORE UX BOOKS</h3>
       <a href="ux-fundamentals/">
-        <button class="btn btn-light hero-btn">UX Essentials</button>
+        <button class="btn btn-light hero-btn">UX Fundamentals</button>
       </a>
-      <a href="#">
+      <a href="psychology-behavior/">
         <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
       </a>
-      <a href="#">
+      <a href="practical-skills/">
         <button class="btn btn-light hero-btn">Practical Skills</button>
       </a>
-      <a href="#">
-        <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      <a href="web-ui-design/">
+        <button class="btn btn-light hero-btn">Web &amp; UI Design</button>
       </a>
     </div>
   </div>

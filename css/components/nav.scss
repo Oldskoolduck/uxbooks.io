@@ -24,9 +24,9 @@
   }
   &-item {
     display: inline-block;
-    padding: 4px 12px 0 0;
-    font-weight: $weight-bold;
+    padding: 4px 18px 0 0;
     color: $color-dark;
+    font-weight: $weight-bold;
     &:hover {
       text-decoration: underline;
       text-decoration-color: $color-primary;
@@ -35,24 +35,35 @@
       padding-right: 0px;
     }
   }
-  &-menu {
-    display: none;
+}
+
+.nav-sticky-menu {
+  display: none;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 340px;
+  border-top: 1px solid $color-lightgrey;
+  @include transition;
+  a {
+    text-align: left;
+    padding: 10px 18px;
+    display: block;
+    font-weight: $weight-bold;
+    &:hover {
+      text-decoration: none;
+      background-color: $color-primary;
+      color: $color-white;
+      @include transition;
+    }
+  }
+  .a2a_kit {
     background-color: $color-white;
     box-shadow: $box-shadow;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    @include transition;
     a {
-      text-align: left;
-      padding: 10px 18px;
-      display: block;
-      &:hover {
-        text-decoration: none;
-        background-color: $color-primary;
-        color: $color-white;
-        @include transition;
-      }
+      padding: 10px 8px;
     }
   }
 }

@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,800|Neuton:800" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
@@ -26,33 +26,29 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Nav
-  <nav class="nav">
-    <div class="container">
-      <img class="nav-logo" src="img/book.svg" alt="ux book">
-      <ul>
-        <li class="nav-item"><a href="#">Categories</a></li>
-        <li class="nav-item"><a href="#">Submit a Book</a></li>
-        <li class="nav-item"><a href="#">Share</a></li>
-      </ul>
-    </div>
-  </nav>
-  -->
   <!-- Sticky Nav -->
-  <div class="nav-sticky">
-    <a class="nav-sticky-logo" href="/">
+  <nav class="nav-sticky">
+    <a class="nav-sticky-logo" href="../">
       <img class="nav-sticky-logo" src="../img/book.svg" alt="ux books logo">
     </a>
-      <a onclick="myFunction()" class="dropbtn nav-sticky-item">Categories</a>
-      <div id="myDropdown" class="nav-sticky-menu">
-        <a href="/ux-fundamentals">UX Fundamentals</a>
-        <a href="/psychology-behavior">Psychology &amp; Behavior</a>
-        <a href="#">Practical Skills</a>
-        <a href="#">Web Design &amp; Development</a>
+      <a onclick="categoryDropdown()" class="dropbtn nav-sticky-item">Categories</a>
+      <div id="categoryDropdown" class="nav-sticky-menu">
+        <a href="../ux-fundamentals/">UX Fundamentals</a>
+        <a href="../psychology-behavior/">Psychology &amp; Behavior</a>
+        <a href="../practical-skills/">Practical Skills</a>
+        <a href="../web-ui-design/">Web &amp; UI Design</a>
       </div>
-      <a href="#submit" class="nav-sticky-item">Share</a>
+      <a onclick="shareDropdown()" class="dropbtn nav-sticky-item">Share</a>
+      <div id="shareDropdown" class="nav-sticky-menu">
+        <div class="a2a_kit a2a_kit_size_50 a2a_default_style">
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_twitter"></a>
+          <a class="a2a_button_reddit"></a>
+          <a class="a2a_button_email"></a>
+        </div>
+      </div>
       <a href="#submit" class="nav-sticky-item">Submit</a>
-  </div>
+  </nav>
 
   <!-- Hero -->
   <header class="hero hero-category" id="top">
@@ -135,7 +131,7 @@
         <div class="col col-two-four">
           <div class="book-info-category">
             <a class="book-title" target="_blank" href="http://amzn.to/2Fk2uT7">Designing Products People Love</a>
-            <p class="book-author">Steve Krug</p>
+            <p class="book-author">Scott Hurff</p>
             <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
           </div>
         </div>
@@ -149,6 +145,90 @@
 
       <hr class="book-separator"/><!-- Divider Line -->
 
+      <div class="col-layout">
+        <div class="col col-four book-cover-category" id="hurff">
+          <a href="https://www.amazon.com/Designing-Mind-Second-Understanding-Guidelines/dp/0124079148/ref=as_li_ss_il?s=books&ie=UTF8&qid=1509071689&sr=1-1&keywords=Designing+with+the+Mind+in+Mind%E2%80%8A%E2%80%94%E2%80%8AJeff+Johnson&linkCode=li3&tag=uxbooks0c-20&linkId=e833a06b3e3f00e0b7157305f1134360" target="_blank"><img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0124079148&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=0124079148" />
+        </div>
+        <div class="col col-two-four">
+          <div class="book-info-category">
+            <a class="book-title" target="_blank" href="http://amzn.to/2rJOiAI">Designing With The Mind In Mind</a>
+            <p class="book-author">Jeff Johnson</p>
+            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
+          </div>
+        </div>
+        <div class="col col-four book-actions">
+          <a target="_blank" href="http://amzn.to/2rJOiAI">
+            <button class="btn btn-primary">Jeff Johnson</button>
+          </a>
+          <a class="book-tray-link" href="#">+ Add to Tray</a>
+        </div>
+      </div><!-- Col Layout 5 -->
+
+      <hr class="book-separator"/><!-- Divider Line -->
+
+      <div class="col-layout">
+        <div class="col col-four book-cover-category" id="hurff">
+          <a href="https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X/ref=as_li_ss_il?s=books&ie=UTF8&qid=1517066060&sr=1-4&keywords=power+of+habit&linkCode=li3&tag=uxbooks0c-20&linkId=549865c93b65ff1f647f5774233753c1" target="_blank"><img  src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=081298160X&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=081298160X"  />
+        </div>
+        <div class="col col-two-four">
+          <div class="book-info-category">
+            <a class="book-title" target="_blank" href="http://amzn.to/2DUatZV">The Power of Habit</a>
+            <p class="book-author">Charles Duhigg</p>
+            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
+          </div>
+        </div>
+        <div class="col col-four book-actions">
+          <a target="_blank" href="http://amzn.to/2DUatZV">
+            <button class="btn btn-primary">Buy on Amazon</button>
+          </a>
+          <a class="book-tray-link" href="#">+ Add to Tray</a>
+        </div>
+      </div><!-- Col Layout 6 -->
+
+      <hr class="book-separator"/><!-- Divider Line -->
+
+      <div class="col-layout">
+        <div class="col col-four book-cover-category" id="hurff">
+          <a href="https://www.amazon.com/Designing-Behavior-Change-Psychology-Behavioral/dp/1449367623/ref=as_li_ss_il?s=books&ie=UTF8&qid=1517066229&sr=1-1&keywords=designing+for+behavior+change&linkCode=li3&tag=uxbooks0c-20&linkId=971190bc50b50571de73b39453e9e5c5" target="_blank"><img  src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1449367623&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=1449367623"/>
+        </div>
+        <div class="col col-two-four">
+          <div class="book-info-category">
+            <a class="book-title" target="_blank" href="http://amzn.to/2DNsLvZ">Designing For Behavior Change</a>
+            <p class="book-author">Stephen Wendel</p>
+            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
+          </div>
+        </div>
+        <div class="col col-four book-actions">
+          <a target="_blank" href="http://amzn.to/2DNsLvZ">
+            <button class="btn btn-primary">Buy on Amazon</button>
+          </a>
+          <a class="book-tray-link" href="#">+ Add to Tray</a>
+        </div>
+      </div><!-- Col Layout 7 -->
+
+      <hr class="book-separator"/><!-- Divider Line -->
+
+      <div class="col-layout">
+        <div class="col col-four book-cover-category" id="hurff">
+          <a href="https://www.amazon.com/Influence-Psychology-Persuasion-Robert-Cialdini/dp/006124189X/ref=as_li_ss_il?s=books&ie=UTF8&qid=1517066428&sr=1-4&keywords=psychology+of+persuasion&linkCode=li3&tag=uxbooks0c-20&linkId=849c4a02900985513279cb8ad9bd9eac" target="_blank"><img  src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=006124189X&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=uxbooks0c-20" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=uxbooks0c-20&l=li3&o=1&a=006124189X" />
+        </div>
+        <div class="col col-two-four">
+          <div class="book-info-category">
+            <a class="book-title" target="_blank" href="http://amzn.to/2DJjCoY">Influence: The Psychology of Persuasion</a>
+            <p class="book-author">Robert B. Cialdini</p>
+            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptas, quae fuga facere quasi tempora, error quos dolore aspernatur praesentium adipisci et molestiae molestias quibusdam atque cumque voluptates harum alias.</p>
+          </div>
+        </div>
+        <div class="col col-four book-actions">
+          <a target="_blank" href="http://amzn.to/2DJjCoY">
+            <button class="btn btn-primary">Buy on Amazon</button>
+          </a>
+          <a class="book-tray-link" href="#">+ Add to Tray</a>
+        </div>
+      </div><!-- Col Layout 8 -->
+
+      <hr class="book-separator"/><!-- Divider Line -->
+
     </div><!-- Container -->
   </div>
 
@@ -156,17 +236,17 @@
   <div class="section explore">
     <div class="container">
       <h3 class="section-title">EXPLORE UX BOOKS</h3>
-      <a href="../ux-essentials/">
-        <button class="btn btn-light hero-btn">UX Essentials</button>
+      <a href="../ux-fundamentals/">
+        <button class="btn btn-light hero-btn">UX Fundamentals</button>
       </a>
-      <a href="#">
+      <a href="../psychology-behavior/">
         <button class="btn btn-light hero-btn">Psychology &amp; Behavior</button>
       </a>
-      <a href="#">
+      <a href="../practical-skills/">
         <button class="btn btn-light hero-btn">Practical Skills</button>
       </a>
-      <a href="#">
-        <button class="btn btn-light hero-btn">Web Design &amp; Development</button>
+      <a href="../web-ui-design/">
+        <button class="btn btn-light hero-btn">Web &amp; UI Design</button>
       </a>
     </div>
   </div>
@@ -201,6 +281,7 @@
       ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

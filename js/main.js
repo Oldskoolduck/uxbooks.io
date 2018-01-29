@@ -1,5 +1,11 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function categoryDropdown() {
+    document.getElementById("categoryDropdown").classList.toggle("show");
+    document.getElementById("shareDropdown").classList.remove("show");
+}
+
+function shareDropdown() {
+    document.getElementById("shareDropdown").classList.toggle("show");
+    document.getElementById("categoryDropdown").classList.remove("show");
 }
 
 // Close the dropdown if the user clicks outside of it
